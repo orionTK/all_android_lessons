@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#465BD3"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtTieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XE Currency Converter: 1 USD to EUR = 0.884143 Euros"
+        android:textColor="#fff"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtTien"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/spinner_tk"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <Spinner
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:id="@+id/spCountryFrom"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_tk"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnChuyen"
+            android:background="#465BD3"
+            android:src="@drawable/ic_chuyen_tk"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"/>
+
+        <Spinner
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:id="@+id/spCountryTo"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_tk"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_chuyen_tien_tk"
+            android:id="@+id/btnChuyenTien"
+            android:background="@drawable/btn_chuyen_tien_tk"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTienChuyen1"
+        android:text="1 USD = "
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTieuDaChuyen1"
+            android:text="0.884143"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDonVi"
+            android:text="EUR"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtKetQua1"
+        android:text="1 EUR = 1.13104 USD"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtKetQua2"
+        android:text="1 USD = 0.884143 EUR"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last update: 2020-06-26 24:32 UTC"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
