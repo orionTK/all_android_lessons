@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VAY TIÊU CHI DÙNG"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Thu nhập tháng"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            />
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtThuNhapThang"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Chi phí phải trả trong tháng"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtChiPhiTra"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Số tiền muốn vay"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginRight="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTienVay"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Lãi suất mong muốn"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spLaiSuat"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Thời gian vay"
+        android:textSize="20sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/group_tk"
+        android:padding="6dp"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rd12Thang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 tháng"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 tháng"
+            android:id="@+id/rd24Thang"
+            android:layout_marginLeft="5dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36 tháng"
+            android:id="@+id/rd36Thang"
+            android:layout_marginLeft="5dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="48 tháng"
+            android:id="@+id/rd48Thang"
+            android:layout_marginLeft="5dp"/>
+
+    </RadioGroup>
+    
+    <Button
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="TÍNH TOÁN "
+        android:background="#fff"
+        android:id="@+id/btnTinhToan"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số tiền phải trả hàng tháng"
+        android:textSize="20sp"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="1.357.000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txtKetQua"/>
+
+</LinearLayout>
