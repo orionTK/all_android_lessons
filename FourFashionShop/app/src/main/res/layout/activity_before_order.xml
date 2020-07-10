@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BeforeOrderActivity"
+    android:background="@color/grey_50">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardViewOrder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/lnLocation"
+                android:background="#fff"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:tint="@color/grey_600"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_edit_location_cart"
+                    android:contentDescription="Địa chỉ"/>
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/txtContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:tint="@color/grey_600"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_chevron_right_black_24dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:background="#fff"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtGaoHang"
+                    android:textStyle="bold"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rdGiaoHang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdGiaoNhanh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Giao nhanh"/>
+
+                    <RadioButton
+                        android:id="@+id/rdGiaoHomSau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Giao hôm sau"/>
+
+                    <RadioButton
+                        android:id="@+id/rdGiaoTC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Giao nhanh tiêu chuẩn"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_product_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/meo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Tạm tính:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintStart_toStartOf="@+id/guideline1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtPriceTamTinh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="200000"
+                        android:textAlignment="center"
+                        android:textColor="#ff4d6a"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        tools:layout_editor_absoluteX="84dp"
+                        tools:layout_editor_absoluteY="48dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="đ"
+                        android:textAlignment="center"
+                        android:textColor="#ff4d6a"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Phí ship:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline1"
+                    app:layout_constraintTop_toBottomOf="@+id/meo" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                    <TextView
+                        android:id="@+id/txtShip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="200000"
+                        android:textAlignment="center"
+                        android:textColor="#ff4d6a"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline"
+                        tools:layout_editor_absoluteY="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="đ"
+                        android:textAlignment="center"
+                        android:textColor="#ff4d6a"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="8dp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="377dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_end="25dp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin = "10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtThanhTien"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thành tiền:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:id="@+id/txtTongTien"
+                android:layout_toRightOf="@id/txtThanhTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20.000 đ"
+                android:textColor="#ff4d6a"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:id="@+id/btnBeforeOrder"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/background_button_card"
+                android:text="@string/Button_DatHang"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

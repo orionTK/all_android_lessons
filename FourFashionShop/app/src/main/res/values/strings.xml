@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FashionShop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Halllooo</string>
+    <string name="price_bar">price_bar</string>
+    <string name="openDrawer">openDrawer</string>
+    <string name="closeDrawer">closeDrawer</string>
+    <string name="disclaimer">Welcom to Fashion Shop</string>
+    <string name="credits">Credits</string>
+    <string name="you_are_running_nout_of_wallet_money">You are Running \nOut of Wallet Money !!!</string>
+    <string name="add_wallet_money">Add Wallet Money</string>
+    <string name="you_cart_is_empty" tools:ignore="DuplicateDefinition">You Cart is Empty !!</string>
+    <string name="rs_0" />
+    <string name="grand_total" />
+    <string name="todo" />
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="first_fragment_label">First fragment label</string>
+    <string name="second_fragment_label">Second fragment label</string>
+    <string name="menu_home">Trang chủ</string>
+    <string name="menu_mall">Mua sắm</string>
+    <string name="menu_cart">Giỏ hàng</string>
+    <string name="menu_account">Cá nhân</string>
+    <string name="content_description_end_icon">meomeo</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="Name">Họ và tên</string>
+    <string name="Phone">Số điện thoại</string>
+    <string name="Address">Địa chỉ</string>
+    <string name="City">Thành phố</string>
+    <string name="Email">Email</string>
+    <string name="Update">Cập nhật</string>
+    <string name="female">Nữ</string>
+    <string name="male">Nam</string>
+
+    <string name="Button_MuaHang">Mua Hàng</string>
+    <string name="Button_DatHang">Đặt Hàng</string>
+    <string name="txt_ThanhTien">Tạm tính: </string>
+    <string name="Button_ComeHome">Tiếp Tục Mua Hàng</string>
+    <string name="txtTieuDeOrder">Đơn Hàng Của Bạn Đã Hoàn Thành</string>
+    <string name="txtGaoHang">Chọn hình thức giao hàng</string>
+    <string name="HoTen">Họ Và Tên</string>
+</resources>

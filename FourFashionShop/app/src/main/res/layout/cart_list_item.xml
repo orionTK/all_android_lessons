@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="3dp"
+    android:layout_margin="2dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imagePro"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:src="@drawable/tra" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/imagePro"
+            android:layout_toRightOf="@id/imagePro"
+            android:gravity="center_vertical"
+            android:text="meo"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/imagePro"
+            android:gravity="center_vertical"
+            android:text="200,000 đ"
+            android:textColor="#ff4d6a"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPrice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/imagePro"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgBtnRemovePro"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#C6C0C0"
+                android:src="@drawable/ic_remove_black_cart" />
+
+            <TextView
+                android:id="@+id/txtSoLuong"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#EFE5E5"
+                android:gravity="center_horizontal"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/imgBtnAddPro"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#C6C0C0"
+                android:src="@drawable/ic_add_black_cart" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgBtnCloseCart"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="#fff"
+            android:src="@drawable/ic_close_black_cart" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

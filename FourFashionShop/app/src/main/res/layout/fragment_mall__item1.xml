@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.mall_Item_Fragment.MallItem1">
+
+    <!-- TODO: Update blank Fragments layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_item1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
