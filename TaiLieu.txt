@@ -1,0 +1,12 @@
+-https://www.javatpoint.com/android-listview-example
+-https://www.tutorialspoint.com/android/android_studio.htm
+-https://online.khoapham.vn/android/31-xay-dung-ung-dung-ban-hang-online/263-android--app-ban-hang--bai-1--cai-dat-server-localhost.html?fbclid=IwAR0zUMd8XT1s7wCZC3Y9AVt0Ay9zJLGFG3NF4CE44t0OJT7Dk-JZThoM-uM
+-https://thangcoder.com/lap-trinh-android/hoc-lap-trinh-android-can-ban/spinner-trong-android
+-https://www.javacodeexamples.com/java-regular-expression-tutorial-with-examples-regex/1639
+-https://stackoverflow.com/questions/33065731/password-check-using-regex-in-java
+-https://stackoverflow.com/questions/33065731/password-check-using-regex-in-java
+- Link youtube:
+- https://www.youtube.com/watch?v=DbCppoeTPIU&list=PLzrVYRai0riSRJ3M3bifVWWRq5eJMu6tv&index=46
+-https://www.youtube.com/watch?v=Q_pGPI4ENOQ&list=PLoDpKWmay6uW21R38K5r_daArLbjLPvPJ&index=6&t=6s
+-https://www.youtube.com/watch?v=hIhPNo-mydM&feature=youtu.be
+-https://www.youtube.com/watch?v=CXf2lYGeqmg&feature=share&fbclid=IwAR2e7R5nB2a2vnhal2Eu1trAvrjnGzwOb8uy5CgSTolgrH2nvci522fmogc
